@@ -8,7 +8,7 @@ import '../model/house.fbx';
 import '../model/textures/Farm_house_D.jpg';
 import '../model/textures/House_Side_D.jpg';
 import '../model/textures/Roof_D.jpg';
-import '../model/textures/checker.png';
+import '../model/textures/grasslight-big.jpg';
 
 function init() {
   //CANVAS
@@ -40,7 +40,7 @@ function init() {
   {
     const planeSize = 20;
     const loader = new THREE.TextureLoader();
-    const texture = loader.load('checker.png');
+    const texture = loader.load('grasslight-big.jpg');
     texture.wrapS = THREE.RepeatWrapping;
     texture.wrapT = THREE.RepeatWrapping;
     texture.magFilter = THREE.NearestFilter;
