@@ -29,6 +29,7 @@ function init() {
 
   //CONTROLS
   const controls = new OrbitControls(camera, canvas);
+  controls.maxPolarAngle = Math.PI * 0.4;
   controls.minDistance = 10;
   controls.maxDistance = 60;
   //CONTROLS
