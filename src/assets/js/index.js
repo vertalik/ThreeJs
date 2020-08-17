@@ -76,19 +76,26 @@ function init() {
     const boxHeight = 2.2;
     const boxDepth = 1.2;
     const geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth);
-    const material = new THREE.MeshPhongMaterial({ color: 0x44aa88 });
+    const material = new THREE.MeshPhongMaterial({
+      color: 0x44aa88,
+      opacity: 0.5,
+      transparent: true
+    });
     const cube = new THREE.Mesh(geometry, material);
     modelsArr.push(cube);
     cube.position.set(-3.3, 2.2, 1.5);
     scene.add(cube);
   }
-
   {
     const boxWidth = 1.4;
     const boxHeight = 1.5;
     const boxDepth = 0.2;
     const geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth);
-    const material = new THREE.MeshPhongMaterial({ color: 0x0000ff});
+    const material = new THREE.MeshPhongMaterial({
+      color: 0x0000ff,
+      opacity: 0.5,
+      transparent: true
+    });
     const cube = new THREE.Mesh(geometry, material);
     modelsArr.push(cube);
     cube.position.set(0.1, 2.5, -3.1);
